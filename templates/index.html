@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %} HOME {% endblock %}
+
+{% block content %} 
+<h1>Index, Pagina Principal este arquivo principal</h1>
+
+{{text}}
+
+{% for nome in nomes %}
+<u>
+    <li><a href="#">{{nome}}</a></li>
+</u>
+{% endfor %}
+
+{% endblock %}
